@@ -295,6 +295,23 @@ a.m-btn, button.m-btn {
       max-width: 135px; }
       .main-page .link-box a img {
         width: 100%; }
+  .main-page .center-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main-page .center-block img {
+      margin-bottom: 40px; }
+    .main-page .center-block h1 {
+      font-size: 64px;
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 25px; }
+    .main-page .center-block h2 {
+      font-size: 36px;
+      text-align: center;
+      max-width: 600px; }
 
 .two-block {
   width: 90%;
@@ -321,6 +338,13 @@ a.m-btn, button.m-btn {
     .two-block .column .text {
       width: 100%;
       padding-right: 25px; }
+      .two-block .column .text.text-w-number {
+        display: flex; }
+        .two-block .column .text.text-w-number span {
+          color: transparent;
+          -webkit-text-stroke: 1px #00D9F5;
+          font-size: 96px;
+          margin-right: 20px; }
 
 .caption {
   text-align: center;
@@ -678,7 +702,12 @@ select:focus option {
     margin-bottom: 40px; }
 
   section {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+
+  .main-page .center-block h1 {
+    font-size: 38px; }
+  .main-page .center-block h2 {
+    font-size: 24px; } }
 @media (max-width: 990px) {
   .m-navbar {
     height: 80px; }
@@ -756,7 +785,8 @@ select:focus option {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    min-height: auto; }
+    min-height: auto;
+    margin-top: 90px; }
     .main-page .text-block {
       width: 100%;
       margin-top: 20px;
@@ -873,7 +903,19 @@ select:focus option {
 
   .two-block a.m-btn, button.m-btn {
     margin: auto;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .two-block .column .text.text-w-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto; }
+
+  .how-link {
+    margin: auto;
+    margin-bottom: 40px;
+    width: max-content; } }
 @media (max-width: 640px) {
   h1 {
     font-size: 24px; }
