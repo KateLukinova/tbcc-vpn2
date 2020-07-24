@@ -107,8 +107,6 @@ header {
     box-sizing: border-box;
     padding: 20px 0;
     z-index: 20;
-    -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
     background-color: white;
 }
 h1 {
@@ -233,9 +231,11 @@ a.m-btn, button.m-btn {
         -webkit-box-flex: inherit;
         -ms-flex-positive: inherit;
         flex-grow: inherit;
+        padding-top: 16px;
     }
     .nav-item {
         margin-left: 40px;
+        position: relative;
         .nav-link {
             font-family: 'Gilroy', sans-serif;
             font-style: normal;
@@ -250,6 +250,15 @@ a.m-btn, button.m-btn {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+        }
+        &.active:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%);
         }
     }
     .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
@@ -509,7 +518,7 @@ ul li {
 }
 
 .lang-select {
-    margin-left: 40px;
+    margin-left: 50px;
     min-width: 40px;
     min-height: 30px;
     padding: 5px;
@@ -818,6 +827,76 @@ select:focus option {
             background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%);
         }
     }
+    &.align-items-center {
+        max-width: 340px;
+        h5 {
+            font-family: 'Gilroy-Bold', sans-serif;
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.15px;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.bg-color-dark {
+    background: rgba(0, 0, 0, 0.87);
+}
+
+.map {
+    padding: 100px 0;
+    p {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: #FFFFFF;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.faq {
+    .card {
+        border: none;
+        background-color: transparent;
+
+        .card-header {
+            padding: 15px 0;
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            h5 {
+                .btn-link {
+                    font-family: 'Gilroy-Medium', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.5;
+                    letter-spacing: 0.15px;
+                    color: #000000;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    text-align: left;
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -982,12 +1061,21 @@ select:focus option {
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .lang-select {
         margin-left: 0;
         color: white;
+    }
+
+    .map p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 16px;
     }
 }
 
@@ -1027,6 +1115,11 @@ select:focus option {
             -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
         }
+    }
+
+    .faq .card .card-header h5 .btn-link {
+        font-size: 20px;
+        text-align: left;
     }
 
 
@@ -1153,5 +1246,13 @@ select:focus option {
     h3 {
         text-align: center;
         font-size: 24px;
+    }
+
+    .values-item.align-items-center {
+        max-width: 100%;
+        width: 100%;
+        h5 {
+            font-size: 24px;
+        }
     }
 }
