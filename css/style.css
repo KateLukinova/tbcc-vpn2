@@ -170,6 +170,8 @@ a.m-btn, button.m-btn {
   margin-bottom: 20px;
   position: relative;
   padding-left: 25px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content; }
   .gal:before {
     content: url("../img/gal.svg");
@@ -221,6 +223,8 @@ a.m-btn, button.m-btn {
       bottom: -20px;
       width: 100%;
       height: 4px;
+      background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
+      background: -o-linear-gradient(left, #00F5A0 0%, #00D9F5 50%);
       background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%); }
   .m-navbar .navbar-toggler, .m-navbar .navbar-toggler:focus, .m-navbar .navbar-toggler:hover {
     border: none;
@@ -244,7 +248,7 @@ a.m-btn, button.m-btn {
   display: flex; }
 
 .bg-color {
-  background-color: #2D9CDB; }
+  background-color: #F8F8F8; }
 
 .main-page {
   margin: 0 auto;
@@ -368,7 +372,27 @@ a.m-btn, button.m-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 48px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: black; }
+  .caption.white {
+    color: white; }
+
+.police-page {
+  padding-bottom: 200px; }
+  .police-page .caption {
+    text-align: left;
+    margin-left: 0; }
+  .police-page p {
+    font-size: 24px;
+    margin-bottom: 16px; }
+  .police-page h4 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    margin-top: 26px; }
 
 footer {
   display: -webkit-box;
@@ -436,7 +460,12 @@ footer {
     color: rgba(0, 0, 0, 0.87); }
 
 .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
   .footer-nav a {
     font-family: 'Gilroy', sans-serif;
@@ -718,8 +747,8 @@ select:focus option {
       bottom: -8px;
       width: 100%;
       height: 4px;
-      background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
       background: -o-linear-gradient(left, #00F5A0 0%, #00D9F5 50%);
+      background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
       background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%); }
   .values-item.align-items-center {
     max-width: 340px; }
@@ -738,6 +767,58 @@ select:focus option {
 .bg-color-dark {
   background: rgba(0, 0, 0, 0.87); }
 
+.big-text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .big-text-block h4 {
+    font-size: 36px; }
+  .big-text-block p {
+    font-size: 24px;
+    text-align: center; }
+
+.big-text {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 64px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 40px 0;
+  margin-left: 80px; }
+  .big-text span {
+    margin-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .big-text span img {
+      width: 80px; }
+
 .map {
   padding: 100px 0; }
   .map p {
@@ -754,10 +835,17 @@ select:focus option {
   border: none;
   background-color: transparent; }
   .faq .card .card-header {
-    padding: 15px 0;
+    padding: 15px 20px;
     background-color: transparent;
     border-radius: 0;
-    border: none; }
+    border: none;
+    position: relative; }
+    .faq .card .card-header:before {
+      content: url("../img/gal.svg");
+      position: absolute;
+      left: 0;
+      top: 24px;
+      margin-right: 4px; }
     .faq .card .card-header h5 .btn-link {
       font-family: 'Gilroy-Medium', sans-serif;
       font-style: normal;
@@ -775,6 +863,20 @@ select:focus option {
       text-align: left; }
       .faq .card .card-header h5 .btn-link:focus {
         text-decoration: none; }
+.faq h4 {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 110px; }
+
+.how-link {
+  margin: auto;
+  margin-bottom: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
 @media (max-width: 1200px) {
   h1 {
@@ -928,7 +1030,32 @@ select:focus option {
     max-width: 250px; }
 
   .footer-nav, .footer-contacts {
-    width: 32%; } }
+    width: 32%; }
+
+  .big-text-block h4 {
+    font-size: 24px; }
+  .big-text-block .big-text {
+    font-size: 36px;
+    margin-left: 60px; }
+    .big-text-block .big-text span img {
+      width: 60px; }
+  .big-text-block p {
+    font-size: 16px; }
+
+  .police-page {
+    margin-top: 60px;
+    padding-bottom: 80px; }
+    .police-page .caption {
+      text-align: left;
+      margin-left: 0;
+      font-size: 24px;
+      width: 100%; }
+    .police-page p {
+      font-size: 16px;
+      margin-bottom: 16px; }
+
+  .police-page h4 {
+    font-size: 24px; } }
 @media (max-width: 768px) {
   .two-block {
     -webkit-box-orient: vertical;
@@ -1026,14 +1153,9 @@ select:focus option {
     max-width: 500px;
     margin: auto; }
 
-  .how-link {
-    margin: auto;
-    margin-bottom: 40px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content; }
-
   .footer-nav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     .footer-nav a {
       max-width: 280px;
@@ -1045,7 +1167,11 @@ select:focus option {
   .gal {
     margin: auto;
     margin-bottom: 16px;
-    max-width: 90%; } }
+    max-width: 90%; }
+
+  .faq h4 {
+    font-size: 24px;
+    margin-bottom: 60px; } }
 @media (max-width: 640px) {
   h1 {
     font-size: 24px; }
@@ -1092,6 +1218,14 @@ select:focus option {
     max-width: 100%;
     width: 100%; }
     .values-item.align-items-center h5 {
-      font-size: 24px; } }
+      font-size: 24px; }
+
+  .big-text-block h4 {
+    font-size: 20px; }
+  .big-text-block .big-text {
+    font-size: 24px;
+    margin-left: 25px; }
+    .big-text-block .big-text span img {
+      width: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -201,6 +201,8 @@ a.m-btn, button.m-btn {
     margin-bottom: 20px;
     position: relative;
     padding-left: 25px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     &:before {
         content: url("../img/gal.svg");
@@ -256,6 +258,8 @@ a.m-btn, button.m-btn {
             bottom: -20px;
             width: 100%;
             height: 4px;
+            background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
+            background: -o-linear-gradient(left, #00F5A0 0%, #00D9F5 50%);
             background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%);
         }
     }
@@ -287,7 +291,7 @@ a.m-btn, button.m-btn {
 }
 
 .bg-color {
-    background-color: #2D9CDB;
+    background-color: #F8F8F8;
 }
 
 .main-page {
@@ -437,6 +441,32 @@ a.m-btn, button.m-btn {
     width: -moz-max-content;
     width: max-content;
     margin-bottom: 35px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: black;
+
+    &.white {
+        color: white;
+    }
+}
+
+.police-page {
+    padding-bottom: 200px;
+    .caption {
+        text-align: left;
+        margin-left: 0;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    h4 {
+        font-size: 36px;
+        margin-bottom: 16px;
+        margin-top: 26px;
+    }
 }
 
 footer {
@@ -519,7 +549,12 @@ footer {
 }
 
 .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     a {
         font-family: 'Gilroy', sans-serif;
@@ -849,8 +884,8 @@ select:focus option {
             bottom: -8px;
             width: 100%;
             height: 4px;
-            background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
             background: -o-linear-gradient(left, #00F5A0 0%, #00D9F5 50%);
+            background: -webkit-gradient(linear, left top, right top, from(#00F5A0), color-stop(50%, #00D9F5));
             background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 50%);
         }
     }
@@ -876,6 +911,67 @@ select:focus option {
     background: rgba(0, 0, 0, 0.87);
 }
 
+.big-text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    h4 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+
+.big-text {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 64px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 40px 0;
+    margin-left: 80px;
+    span {
+        margin-left: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            width: 80px;
+        }
+    }
+}
+
 .map {
     padding: 100px 0;
     p {
@@ -897,10 +993,18 @@ select:focus option {
         background-color: transparent;
 
         .card-header {
-            padding: 15px 0;
+            padding: 15px 20px;
             background-color: transparent;
             border-radius: 0;
             border: none;
+            position: relative;
+            &:before {
+                content: url("../img/gal.svg");
+                position: absolute;
+                left: 0;
+                top: 24px;
+                margin-right: 4px;
+            }
             h5 {
                 .btn-link {
                     font-family: 'Gilroy-Medium', sans-serif;
@@ -924,6 +1028,22 @@ select:focus option {
             }
         }
     }
+    h4 {
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 36px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: rgba(0, 0, 0, 0.87);
+        margin-bottom: 110px;
+    }
+}
+
+.how-link {
+    margin: auto;
+    margin-bottom: 40px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
 }
 
 @media (max-width: 1200px) {
@@ -1117,6 +1237,45 @@ select:focus option {
     .footer-nav, .footer-contacts {
         width: 32%;
     }
+
+    .big-text-block {
+        h4 {
+            font-size: 24px;
+        }
+
+        .big-text {
+            font-size: 36px;
+            margin-left: 60px;
+            span {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .police-page {
+        margin-top: 60px;
+        padding-bottom: 80px;
+        .caption {
+            text-align: left;
+            margin-left: 0;
+            font-size: 24px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .police-page h4 {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1237,15 +1396,9 @@ select:focus option {
         max-width: 500px;
         margin: auto;
     }
-
-    .how-link {
-        margin: auto;
-        margin-bottom: 40px;
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
-    }
     .footer-nav {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         a {
             max-width: 280px;
@@ -1259,6 +1412,11 @@ select:focus option {
         margin: auto;
         margin-bottom: 16px;
         max-width: 90%;
+    }
+
+    .faq h4 {
+        font-size: 24px;
+        margin-bottom: 60px;
     }
 }
 
@@ -1321,6 +1479,21 @@ select:focus option {
         width: 100%;
         h5 {
             font-size: 24px;
+        }
+    }
+
+    .big-text-block {
+        h4 {
+            font-size: 20px;
+        }
+        .big-text {
+            font-size: 24px;
+            margin-left: 25px;
+            span {
+                img {
+                    width: 50px;
+                }
+            }
         }
     }
 }
