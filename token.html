@@ -48,14 +48,16 @@
                             </a>
                         </li>
                     </ul>
-                    <select name="lang" class="lang-select-mobile">
+                    <select name="lang" class="lang-select-mobile lang">
                         <option value="EN">En</option>
                         <option value="RU">Ru</option>
+                        <option value="CH">CH</option>
                     </select>
                 </div>
-                <select name="lang" class="lang-select">
+                <select name="lang" class="lang-select lang">
                     <option value="EN">En</option>
                     <option value="RU">Ru</option>
+                    <option value="CH">CH</option>
                 </select>
             </div>
         </nav>
@@ -64,17 +66,17 @@
     <div class="container-fluid">
         <section class="main-page">
             <div class="text-block w-50">
-                <h1 data-aos="fade-up">
+                <h1 data-aos="fade-up" id="tokenH1">
                     What is VTBC?
                 </h1>
-                <h2 data-aos="fade-up" data-aos-delay="300">
-                    VTBC token is the new digital asset that is realed by TBCC VPN. It is fully decentralized and can be traded on Binance DEX in pair with BNB. VTBC is available on Binance Chain platform.
+                <h2 data-aos="fade-up" data-aos-delay="300" id="tokenH2">
+                    VTBC token is the new digital asset that is released by TBCC VPN. It is fully decentralized and can be traded on Binance DEX in pair with BNB. VTBC is available on Binance Chain platform.
                 </h2>
                 <div class="link-box">
                     <a href="#" data-aos="fade-up" data-aos-delay="600">
                         <img src="img/apple.svg" alt="">
                     </a>
-                    <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest.apk" data-aos="fade-up" data-aos-delay="800">
+                    <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/" data-aos="fade-up" data-aos-delay="800">
                         <img src="img/android.svg" alt="">
                     </a>
                 </div>
@@ -88,15 +90,15 @@
     <section class="two-block">
         <div class="column" data-aos="fade-up">
             <div class="text">
-                <h2>VTBC — native mini token on blockchain.</h2>
-                <p class="gal">
+                <h2 id="tokenCaptionOne">VTBC — new token on blockchain.</h2>
+                <p class="gal" id="tokenUlBlockOne">
                     Afordable price
                 </p>
-                <p class="gal">Fixed quantity with 1.000.000 token</p>
-                 <p class="gal">
+                <p class="gal" id="tokenUlBlockTwo">Fixed quantity with 1.000.000 token</p>
+                 <p class="gal" id="tokenUlBlockThree">
                      Works seamlessly with new BEP8 protocol
                  </p>
-                <p class="gal">
+                <p class="gal" id="tokenUlBlockFour">
                     Available for buying on Binance DEX or via TBCC Wallet
                 </p>
                 <a href="#" class="m-btn">Start to use</a>
@@ -111,21 +113,21 @@
 
     <section class="container-fluid">
         <div class="values">
-            <h3 class="mb-5">Usage of VTBC</h3>
+            <h3 class="mb-5" id="tokenCaptionTwo">Usage of VTBC</h3>
             <div class="values-box">
                 <div class="values-item">
                     <div class="heart-img">
                         <img src="img/del.svg" alt="">
                     </div>
-                    <p>
-                        With VTBC mini token you can trade on Binance DEX
+                    <p id="tokenPItemOne">
+                        Pay for your VPN keys to activate the TBCC VPN app
                     </p>
                 </div>
                 <div class="values-item">
                     <div class="heart-img">
                         <img src="img/col.svg" alt="">
                     </div>
-                    <p>
+                    <p id="tokenPItemTwo">
                         With VTBC token you can trade on Binance DEX
                     </p>
                 </div>
@@ -133,41 +135,41 @@
                     <div class="heart-img">
                         <img src="img/computer.svg" alt="">
                     </div>
-                    <p>
+                    <p id="tokenPItemThree">
                         AirDrop — share your VTBC token via AirDrop
                     </p>
                 </div>
             </div>
         </div>
         <div class="values">
-            <h3 class="mb-5">VTBC Market perfomance</h3>
+            <h3 class="mb-5" id="tokenCaptionThree">VTBC Market perfomance</h3>
             <div class="values-box">
                 <div class="values-item item-4">
-                    <p>
+                    <p id="totalMarketCap">
                         Total Market Cap
                     </p>
                     <span id="total-market-cap"></span>
                 </div>
                 <div class="values-item item-4">
-                    <p>
+                    <p id="priceText">
                         Price
                     </p>
                     <span id="price"></span>
                 </div>
                 <div class="values-item item-4">
-                    <p>
+                    <p id="volumeText">
                         24h Volume
                     </p>
                     <span id="volume"></span>
                 </div>
                 <div class="values-item item-4">
-                    <p class="nowrap">
+                    <p class="nowrap" id="globalRankText">
                         Global Rank (protocol BEP8)
                     </p>
                     <span id="global-rank">5</span>
                 </div>
             </div>
-            <a href="#" class="m-btn">Start to use</a>
+            <a href="#" class="m-btn" id="buttonText">Start to use</a>
         </div>
     </section>
 
@@ -179,13 +181,13 @@
         </div>
         <div class="content">
             <div class="footer-contacts">
-                Contact Us
+                <span id="footerItemOne">Contact Us</span>
                 <a href="mailto:info@tbccvpn.com">info@tbccvpn.com</a>
             </div>
             <div class="footer-nav">
                 <!--                <a href="return-police.html">Return policy</a>-->
-                <a href="terms.html">Terms of use</a>
-                <a href="privace-police.html">Privacy Policy</a>
+                <a href="terms.html" id="footerItemFour">Terms of use</a>
+                <a href="privace-police.html" id="footerItemFive">Privacy Policy</a>
                 <!--                <a href="complete.html">Complete description of services offered</a>-->
             </div>
             <div class="footer-contacts">
@@ -243,7 +245,7 @@
                 <a href="#">
                     <img src="img/apple.svg" alt="">
                 </a>
-                <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest.apk">
+                <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/">
                     <img src="img/android.svg" alt="">
                 </a>
             </div>

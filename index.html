@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="yandex-verification" content="cf005d80655cbeea" />
 <!--    <link rel="shortcut icon" type="image/x-icon" sizes="256x256" href="favicon.png"/>-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
@@ -33,29 +34,31 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="how-to-use.html">
+                        <a class="nav-link" href="how-to-use.html" id="menuItemOne">
                             How to use
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="token.html">
+                        <a class="nav-link" href="token.html" id="menuItemTwo">
                             VTBC Token
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">
+                        <a class="nav-link" href="about.html" id="menuItemThree">
                             About
                         </a>
                     </li>
                 </ul>
-                <select name="lang" class="lang-select-mobile">
+                <select name="lang" class="lang-select-mobile lang">
                     <option value="EN">En</option>
                     <option value="RU">Ru</option>
+                    <option value="CH">CH</option>
                 </select>
             </div>
-            <select name="lang" class="lang-select">
+            <select name="lang" class="lang-select lang">
                 <option value="EN">En</option>
                 <option value="RU">Ru</option>
+                <option value="CH">CH</option>
             </select>
         </div>
     </nav>
@@ -64,17 +67,17 @@
     <div class="container-fluid">
         <section class="main-page">
             <div class="text-block">
-                <h1 data-aos="fade-up">
+                <h1 data-aos="fade-up" id="tbccVPN">
                     TBCC VPN
                 </h1>
-                <h2 data-aos="fade-up" data-aos-delay="300">
-                    Try the first decentralized blockchain-based VPN. Even a supercomputer will not get an acess to your data.
+                <h2 data-aos="fade-up" data-aos-delay="300" id="mainH2">
+                    Try the first decentralized blockchain-based VPN. Even a supercomputer will not get an access to your data.
                 </h2>
                 <div class="link-box">
                     <a href="#" data-aos="fade-up" data-aos-delay="600">
                         <img src="img/apple.svg" alt="">
                     </a>
-                    <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest.apk" data-aos="fade-up" data-aos-delay="800">
+                    <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/" data-aos="fade-up" data-aos-delay="800">
                         <img src="img/android.svg" alt="">
                     </a>
                 </div>
@@ -93,8 +96,8 @@
         </div>
         <div class="column" data-aos="fade-up">
             <div class="text">
-                <h2>New era of safety</h2>
-                <p>
+                <h2 id="mainCaptionOne">New era of safety</h2>
+                <p id="mainPBlockOne">
                     TBCC VPN is based on Cellframe platform. Instead of other VPN, we implement quantum-safe cryptography that protects all your operation and information. TBCC VPN is completely anonymous due to multiple routing.
                 </p>
             </div>
@@ -104,23 +107,23 @@
     <section class="two-block mobile-column-reverse">
         <div class="column" data-aos="fade-up">
             <div class="text">
-                <h2>Main advantages</h2>
+                <h2 id="mainCaptionTwo">Main advantages</h2>
                 <ul>
-                    <li>
+                    <li id="mainUlBlockLiOne">
                         • Simple and easy to use interface
                     </li>
-                    <li>
+                    <li id="mainUlBlockLiTwo">
                         • More secure than centralized VPNs – be sure that all your data and transactions will be safe                     </li>
-                    <li>
+                    <li id="mainUlBlockLiThree">
                         • TBCC VPN doesn’t collect logs
                     </li>
-                    <li>
+                    <li id="mainUlBlockLiFour">
                         • It has no single point of failure that is why it can’t be blocked;
                     </li>
-                    <li>
-                        TBCC VPN users can’t be identified by payments or traffic trace
+                    <li id="mainUlBlockLiFive">
+                        • TBCC VPN users can’t be identified by payments or traffic trace
                     </li>
-                    <li>
+                    <li id="mainUlBlockLiSix">
                         • Fast internet connection.
                     </li>
                 </ul>
@@ -141,11 +144,11 @@
         </div>
         <div class="column" data-aos="fade-up">
             <div class="text">
-                <h2>No more borders</h2>
-                <p>
+                <h2 id="mainCaptionThree">No more borders</h2>
+                <p id="mainPBlockTwo">
                     Get unlimited access to music, social media, videos, apps, and to many internet resources from any place in the world. Forget about geo-blocks and enjoy the Internet without cyber borders.
                 </p>
-                <a href="#" class="m-btn">Start to use</a>
+                <a href="#" class="m-btn" id="textButton">Start to use</a>
             </div>
         </div>
     </section>
@@ -158,13 +161,13 @@
         </div>
         <div class="content">
             <div class="footer-contacts">
-                Contact Us
+                <span id="footerItemOne">Contact Us</span>
                 <a href="mailto:info@tbccvpn.com">info@tbccvpn.com</a>
             </div>
             <div class="footer-nav">
 <!--                <a href="return-police.html">Return policy</a>-->
-                <a href="terms.html">Terms of use</a>
-                <a href="privace-police.html">Privacy Policy</a>
+                <a href="terms.html" id="footerItemFour">Terms of use</a>
+                <a href="privace-police.html" id="footerItemFive">Privacy Policy</a>
 <!--                <a href="complete.html">Complete description of services offered</a>-->
             </div>
             <div class="footer-contacts">
@@ -222,7 +225,7 @@
                 <a href="#">
                     <img src="img/apple.svg" alt="">
                 </a>
-                <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest.apk">
+                <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/">
                     <img src="img/android.svg" alt="">
                 </a>
             </div>

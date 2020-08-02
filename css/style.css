@@ -151,8 +151,10 @@ a.m-btn, button.m-btn {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 166px;
+  min-width: 166px;
   height: 52px;
+  width: max-content;
+  padding: 0 15px;
   background-color: #00BFD8;
   border-radius: 8px;
   font-family: 'Gilroy-Medium', sans-serif;
@@ -170,9 +172,7 @@ a.m-btn, button.m-btn {
   margin-bottom: 20px;
   position: relative;
   padding-left: 25px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
+  width: auto; }
   .gal:before {
     content: url("../img/gal.svg");
     position: absolute;
@@ -352,7 +352,8 @@ a.m-btn, button.m-btn {
     line-height: 1.5;
     letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 0.87);
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    max-width: 600px; }
   .main-page .link-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,6 +737,7 @@ ul li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 40px; }
 
 .values-item {
@@ -772,8 +774,6 @@ ul li {
   .values-item p {
     font-size: 20px;
     line-height: 1.5; }
-    .values-item p.nowrap {
-      white-space: nowrap; }
   .values-item span {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 36px;
@@ -826,7 +826,8 @@ ul li {
     font-size: 36px; }
   .big-text-block p {
     font-size: 24px;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.5; }
 
 .big-text {
   font-family: 'Gilroy-Bold', sans-serif;
@@ -901,8 +902,9 @@ ul li {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      text-align: left; }
-      .faq .card .card-header h5 .btn-link:focus {
+      text-align: left;
+      cursor: auto; }
+      .faq .card .card-header h5 .btn-link:focus, .faq .card .card-header h5 .btn-link:hover {
         text-decoration: none; }
 .faq h4 {
   font-family: 'Gilroy-Bold', sans-serif;
