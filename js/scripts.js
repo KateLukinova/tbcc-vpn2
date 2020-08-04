@@ -105,8 +105,8 @@ $( document ).ready(function() {
             howCaptionOne: 'How to get TBCC VPN key?',
             howPBlockThree: 'It’s quite simple. You have to download TBCC Wallet mobile app and buy a key with VTBC token.',
             howPBlockFour: 'VTBC tokens can be changed on Binance DEX in pair VTBC/BNB or in TBCC Wallet app on your mobile phone.',
-            key: 'key',
-            howPBlockFive: 'Note: you need to have Binance Coin (BNB) on your balance',
+            key: 'VPN key ',
+            howPBlockFive: 'Note: you need to have Binance Coin (BNB) on your balance. One key is available for one year.',
             aboutH1: 'About TBCC VPN',
             aboutH2: 'TBCC VPN is one of the services that is provided to users by TBCC Labs. The mission of TBCC VPN is to provide safe and fast internet connection without any logs, spy or selling data. We want to help our users to forget about cyber borders, without compromising the safety of data. Our priority is to make all your transactions fast and secure.',
             globalServers: 'Global servers',
@@ -168,14 +168,14 @@ $( document ).ready(function() {
             priceText: 'Цена',
             volumeText: '24 часовой объем',
             globalRankText: 'Мировой рейтинг (среди протокола BEP8)',
-            howH1: 'как использовать TBCC VPN?',
+            howH1: 'Как использовать TBCC VPN?',
             howH2: 'Для того, чтобы начать использование TBCC VPN вам необходимо сделать всего 2 шага',
             howPBlockOne: 'Для начала работы с приложением TBCC VPN вам нужно установить мобильное приложение (временно доступно только приложение для Android)',
             howPBlockTwo: 'Для того, чтобы активировать VPN приложение вам необходимо иметь VPN ключ',
             howCaptionOne: 'Как получить ключ для TBCC VPN?',
             howPBlockThree: 'Это достаточно просто. Вам необходимо установить мобильное приложение TBCC Wallet и купить ключ при помощи VTBC токенов. Войти в кошелек',
             howPBlockFour: 'Токены VTBC можно получить на бирже Binance DEX в паре VTBC/BNB или в приложении TBCC Wallet на вашем мобильном телефоне',
-            key: 'ключ',
+            key: 'VPN ключ ',
             howPBlockFive: 'Внимание: вам необходимо иметь Binance Coin (BNB) на вашем балансе',
             aboutH1: 'О TBCC VPN',
             aboutH2: 'TBCC VPN является одним из сервисов, предоставляемых пользователям компанией TBCC Labs. Миссия TBCC VPN - обеспечить безопасное и быстрое подключение к Интернету без каких-либо лагов, шпионажа или продажи данных. Мы хотим помочь нашим пользователям забыть о кибер-границах, не ставя при этом под угрозу безопасность данных. Наш приоритет - сделать все ваши транзакции быстрыми и безопасными.',
@@ -272,12 +272,23 @@ $( document ).ready(function() {
 
     var language = 'EN';
 
-    setLanguage(dictionary, language);
+    if(localStorage.getItem('todoLang')){
+        $('.lang').val(localStorage.getItem('todoLang'));
+        console.log('kdjdj')
+        setLanguage(dictionary, localStorage.getItem('todoLang'));
+        language = localStorage.getItem('todoLang');
+    } else {
+        setLanguage(dictionary, language);
+    }
 
     $('.lang').change(function () {
         language = $(this).val();
         setLanguage(dictionary, language);
-    })
+        localStorage.setItem('todoLang', language);
+    });
+
+
+
 });
 
 function compare( a, b ) {
@@ -329,5 +340,32 @@ function setLanguage(dictionary, language)
     $('#priceText').text(dictionary[language].priceText);
     $('#volumeText').text(dictionary[language].volumeText);
     $('#globalRankText').text(dictionary[language].globalRankText);
-
+    $('#howH1').text(dictionary[language].howH1);
+    $('#howH2').text(dictionary[language].howH2);
+    $('#howPBlockOne').text(dictionary[language].howPBlockOne);
+    $('#howPBlockTwo').text(dictionary[language].howPBlockTwo);
+    $('#howCaptionOne').text(dictionary[language].howCaptionOne);
+    $('#howPBlockThree').text(dictionary[language].howPBlockThree);
+    $('#howPBlockFour').text(dictionary[language].howPBlockFour);
+    $('#key').text(dictionary[language].key);
+    $('#howPBlockFive').text(dictionary[language].howPBlockFive);
+    $('#aboutH1').text(dictionary[language].aboutH1);
+    $('#aboutH2').text(dictionary[language].aboutH2);
+    $('#globalServers').text(dictionary[language].globalServers);
+    $('#aboutPBlockOne').text(dictionary[language].aboutPBlockOne);
+    $('#aboutCaptionOne').text(dictionary[language].aboutCaptionOne);
+    $('#aboutUlBlockOne').text(dictionary[language].aboutUlBlockOne);
+    $('#aboutUlBlockTwo').text(dictionary[language].aboutUlBlockTwo);
+    $('#aboutUlBlockThree').text(dictionary[language].aboutUlBlockThree);
+    $('#aboutUlBlockFour').text(dictionary[language].aboutUlBlockFour);
+    $('#aboutUlBlockFive').text(dictionary[language].aboutUlBlockFive);
+    $('#keyFeatures').text(dictionary[language].keyFeatures);
+    $('#aboutCaptionTwo').text(dictionary[language].aboutCaptionTwo);
+    $('#aboutPBlockTwo').text(dictionary[language].aboutPBlockTwo);
+    $('#aboutH3One').text(dictionary[language].aboutH3One);
+    $('#aboutH3Two').text(dictionary[language].aboutH3Two);
+    $('#aboutH3Three').text(dictionary[language].aboutH3Three);
+    $('#aboutPBlockThree').text(dictionary[language].aboutPBlockThree);
+    $('#aboutPBlockFour').text(dictionary[language].aboutPBlockFour);
+    $('#aboutPBlockFive').text(dictionary[language].aboutPBlockFive);
 }

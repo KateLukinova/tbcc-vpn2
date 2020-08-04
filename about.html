@@ -33,29 +33,31 @@
                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="how-to-use.html">
+                            <a class="nav-link" href="how-to-use.html" id="menuItemOne">
                                 How to use
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="token.html">
+                            <a class="nav-link" href="token.html" id="menuItemTwo">
                                 VTBC Token
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="about.html">
+                            <a class="nav-link" href="about.html" id="menuItemThree">
                                 About
                             </a>
                         </li>
                     </ul>
-                    <select name="lang" class="lang-select-mobile">
+                    <select name="lang" class="lang-select-mobile lang">
                         <option value="EN">En</option>
                         <option value="RU">Ru</option>
+                        <option value="CH">CH</option>
                     </select>
                 </div>
-                <select name="lang" class="lang-select">
+                <select name="lang" class="lang-select lang">
                     <option value="EN">En</option>
                     <option value="RU">Ru</option>
+                    <option value="CH">CH</option>
                 </select>
             </div>
         </nav>
@@ -64,10 +66,10 @@
     <div class="container-fluid">
         <section class="main-page">
             <div class="text-block">
-                <h1 data-aos="fade-up">
+                <h1 data-aos="fade-up" id="aboutH1">
                     About TBCC VPN
                 </h1>
-                <h2 data-aos="fade-up" data-aos-delay="300">
+                <h2 data-aos="fade-up" data-aos-delay="300" id="aboutH2">
                     TBCC VPN is one of the services that is provided to users by TBCC Labs.<br>
                     The mission of TBCC VPN is to provide safe and fast internet connection without any logs, spy or selling data. We want to help our users to forget about cyber borders, without compromising the safety of data.<br>
                     Our priority is to make all your transactions fast and secure.
@@ -89,10 +91,10 @@
 
     <section class="container-fluid p-0 bg-color-dark">
         <div class="container map">
-            <div class="caption white">
+            <div class="caption white" id="globalServers">
                 Global servers
             </div>
-            <p>
+            <p id="aboutPBlockOne">
                 We don’t use servers as ordinary VPN services do. TBCC VPN is totally decentralized and can be located anywhere. You can be in any place in the world and use our VPN, your location doesn't matter.
             </p>
             <img src="img/map.png" alt="">
@@ -100,7 +102,7 @@
     </section>
 
     <section class="faq">
-        <h4 class="text-center">
+        <h4 class="text-center" id="aboutCaptionOne">
             Unlike other VPN, TBCC VPN has such distinctive features as:
         </h4>
         <div class="two-block p-0 align-items-start mt-5">
@@ -118,7 +120,8 @@
                                         data-toggle="collapse"
                                         data-target="#collapseOne"
                                         aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                        aria-controls="collapseOne"
+                                        id="aboutUlBlockOne">
                                     IP Blacklisting
                                 </button>
                             </h5>
@@ -131,7 +134,8 @@
                                         data-toggle="collapse"
                                         data-target="#collapseTwo"
                                         aria-expanded="false"
-                                        aria-controls="collapseTwo">
+                                        aria-controls="collapseTwo"
+                                        id="aboutUlBlockTwo">
                                     QoS Guarantees
                                 </button>
                             </h5>
@@ -144,7 +148,8 @@
                                         data-toggle="collapse"
                                         data-target="#collapseThree"
                                         aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                        aria-controls="collapseThree"
+                                        id="aboutUlBlockThree">
                                     No Logging – you have no need to provide your ID to the service
                                 </button>
                             </h5>
@@ -157,7 +162,8 @@
                                         data-toggle="collapse"
                                         data-target="#collapseFour"
                                         aria-expanded="false"
-                                        aria-controls="collapseFour">
+                                        aria-controls="collapseFour"
+                                        id="aboutUlBlockFour">
                                     Internal VPN stock
                                 </button>
                             </h5>
@@ -170,7 +176,8 @@
                                         data-toggle="collapse"
                                         data-target="#collapseFive"
                                         aria-expanded="false"
-                                        aria-controls="collapseFive">
+                                        aria-controls="collapseFive"
+                                        id="aboutUlBlockFive">
                                     Variable encryption
                                 </button>
                             </h5>
@@ -185,8 +192,8 @@
     <section class="two-block">
         <div class="column" data-aos="fade-up">
             <div class="text">
-                <h2>Why TBCC VPN is better?</h2>
-                <p>
+                <h2 id="aboutCaptionTwo">Why TBCC VPN is better?</h2>
+                <p id="aboutPBlockTwo">
                     TBCC VPN is much safer than other VPNs because it implements original cryptography, unlike other VPNs. The connection of the Internet will be extremely fast – you have no need to worry that you won’t succeed to do an immediate purchase on Binance DEX. Also, TBCC VPN has and easy-to-use interface.
                     We provide you with totally anonymous app, that will never provide information upon your transactions and data.
                 </p>
@@ -201,32 +208,32 @@
 
     <section class="container-fluid">
         <div class="values">
-            <h2 class="text-center mb-5">Key features</h2>
-            <div class="values-box">
+            <h2 class="text-center mb-5" id="keyFeatures">Key features</h2>
+            <div class="values-box align-items-start">
                 <div class="values-item align-items-center">
                     <img src="img/surf.svg" alt="">
-                    <h5>
+                    <h5 id="aboutH3One">
                         Shielded and widened internet surfing
                     </h5>
-                    <p>
+                    <p id="aboutPBlockThree">
                         With TBCC VPN, you are fully protected from tracking and monitoring. You can work in the Internet, watch videos, use any app.
                     </p>
                 </div>
                 <div class="values-item align-items-center">
                     <img src="img/surf2.svg" alt="">
-                    <h5>
+                    <h5 id="aboutH3Two">
                         Totally anonymous
                     </h5>
-                    <p>
+                    <p id="aboutPBlockFour">
                         TBCC VPN protects you from the undesired attention from spy websites and annoying advertisers. No problems with visiting websites – your real IP will never be flagged on the Internet.
                     </p>
                 </div>
                 <div class="values-item align-items-center">
                     <img src="img/surf3.svg" alt="">
-                    <h5>
+                    <h5 id="aboutH3Three">
                         Decentralized
                     </h5>
-                    <p>
+                    <p id="aboutPBlockFive">
                         TBCC VPN is based on the decentralized Cellframe blockchain platform. Decentralization allows you to be independent of servers location and your connection is as fast as possible!
                     </p>
                 </div>
@@ -242,13 +249,13 @@
         </div>
         <div class="content">
             <div class="footer-contacts">
-                Contact Us
+                <span id="footerItemOne">Contact Us</span>
                 <a href="mailto:info@tbccvpn.com">info@tbccvpn.com</a>
             </div>
             <div class="footer-nav">
                 <!--                <a href="return-police.html">Return policy</a>-->
-                <a href="terms.html">Terms of use</a>
-                <a href="privace-police.html">Privacy Policy</a>
+                <a href="terms.html" id="footerItemFour">Terms of use</a>
+                <a href="privace-police.html" id="footerItemFive">Privacy Policy</a>
                 <!--                <a href="complete.html">Complete description of services offered</a>-->
             </div>
             <div class="footer-contacts">
